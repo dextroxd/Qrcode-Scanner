@@ -17,5 +17,13 @@
         android:layout_marginBottom="16dp"
         android:text="Scan"
         android:id="@+id/scan123"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        android:id="@+id/next"/>
 
 </RelativeLayout>

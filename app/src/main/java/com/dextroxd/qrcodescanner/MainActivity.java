@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
     private TextView info;
-    private Button button;
+    private Button button,buttonnext;
     private IntentIntegrator qrScan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         qrScan = new IntentIntegrator(this);
         info = findViewById(R.id.info);
-
+        buttonnext = findViewById(R.id.next);
+        buttonnext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Main2Activity.class));
+            }
+        });
         button = findViewById(R.id.scan123);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
